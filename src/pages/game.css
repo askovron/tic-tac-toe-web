@@ -1,0 +1,32 @@
+.board {
+  margin: 2rem auto 0;
+  width: 375px;
+  height: 375px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.board.disalbed {
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.board div {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #d3d3d3;
+  background-color: #f5f5f5;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board div:hover {
+  background-color: #ffffe0;
+}
+
+.board.disalbed div {
+  border-color: transparent;
+}
